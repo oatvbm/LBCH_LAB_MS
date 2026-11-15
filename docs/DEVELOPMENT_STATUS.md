@@ -6,7 +6,9 @@
 
 ## ระยะปัจจุบัน
 
-**R0 Platform kernel — วางแผน (task card รออนุมัติ)** → [docs/tasks/R0-platform-kernel.md](tasks/R0-platform-kernel.md)
+**R0 Platform kernel — กำลังทำ** (task card และข้อเสนอ Q1–Q6 อนุมัติ 2026-11-15) → [docs/tasks/R0-platform-kernel.md](tasks/R0-platform-kernel.md)
+
+ADR ที่ใช้อยู่: [docs/adr/](adr/README.md) (ADR-0001 ถึง ADR-0008)
 
 ## เสร็จแล้ว
 
@@ -18,11 +20,12 @@
 
 | Task | ผู้ทำ | branch / PR | หมายเหตุ |
 |---|---|---|---|
-| — | | | |
+| TASK-R0-00 ADR ชุดแรก | Claude | `task/r0-00-adr` | รอรีวิว PR |
 
 ## รอข้อมูล / รอตัดสินใจ
 
-- คำถามที่ต้องตัดสินใจก่อนเริ่ม R0 อยู่ในหัวข้อ "ต้องตัดสินใจก่อนเริ่ม" ของ task card R0
+- branch protection ของ `main` บน GitHub (tech lead ตั้งหลัง R0-02)
+- นโยบายอายุ session ของ CAS ใน production (ADR-0005 ข้อ 5) — ตกลงกับฝ่าย IT
 - ค่า CAS ของ AppCode `LAB_MS` (legacy-changes LC-001, LC-002)
 - Phase 0 ของ R1 (เอกสาร 03): HL7 ตัวอย่างที่ de-identify แล้ว, ผล query Q1–Q8, golden dataset
 

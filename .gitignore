@@ -1,0 +1,38 @@
+# Build outputs
+bin/
+obj/
+publish/
+artifacts/
+TestResults/
+node_modules/
+
+# Local configuration and secrets (AGENTS.md ข้อ 4)
+.env
+.env.*
+!.env.example
+appsettings.*.local.json
+*.user
+*.pfx
+*.p12
+.local-keys/
+.local-dev/
+secrets.json
+
+# Runtime files
+logs/
+*.log
+
+# Patient data must never be committed — de-identified fixtures only, under tests/fixtures/
+*.hl7.raw
+RawData/
+
+# Editor / OS
+.vs/
+.vscode/
+.idea/
+*.suo
+Thumbs.db
+.DS_Store
+
+# Claude Code local settings
+.claude/settings.local.json
